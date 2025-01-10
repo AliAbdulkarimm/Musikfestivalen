@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikfestivalen</title>
+    <link rel="stylesheet" href="Musikfestivalen.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Musikfestivalen</h1>
+    </header>
+    
+    <main>
+        <section id="filters" class="filters">
+            <h2>Filtrera artister</h2>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <label for="genre-filter">Genre:</label>
+                    <select id="genre-filter">
+                        <option value="">Alla genrer</option>
+                    </select>
+
+                    <label for="day-filter">Dag:</label>
+                    <select id="day-filter">
+                        <option value="">Alla dagar</option>
+                    </select>
+
+                    <label for="stage-filter">Scen:</label>
+                    <select id="stage-filter">
+                        <option value="">Alla scener</option>
+                    </select>
+
+                    <button type="submit" id="filter-btn">Filtrera</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="content" class="content">
+            <!-- Dynamiskt innehåll laddas här -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Musikfestivalen | Stockholm Stad</p>
+    </footer>
+
+    <script src="Musikfestivalen.js"></script>
+</body>
+</html>

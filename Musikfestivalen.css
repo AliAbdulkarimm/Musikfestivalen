@@ -1,0 +1,113 @@
+/* Grundläggande styling med gradient och modern estetik */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Filtersektionen */
+#filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    background-color: #ffffff;
+    color: #333;
+}
+
+button {
+    background-color: #ff4a6e;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e33e5e;
+}
+
+/* Sektionen för artister */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.artist-card h3 {
+    font-size: 1.6rem;
+    color: #ff4a6e;
+    margin-bottom: 10px;
+}
+
+.artist-card p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+strong {
+    color: #444;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .artist-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer-styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: relative;
+}
